@@ -18,10 +18,10 @@ from django.urls import path
 from basicmixins import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('Studentlistcreate/',views.Studentlistcreate.as_view()),
+    path('admin/', admin.site.urls),#admin url
+    path('Studentlistcreate/',views.Studentlistcreate.as_view()),#list, create mixin url
     
-    path('Studentretrieveupdatedestroy/<int:pk>/',views.Studentretrieveupdatedestroy.as_view()),
+    path('Studentretrieveupdatedestroy/<int:pk>/',views.Studentretrieveupdatedestroy.as_view()), # retrieve, update, destroy url
     
     
 
